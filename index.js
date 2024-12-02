@@ -9,7 +9,7 @@ const app = express();
 const upload = multer({ dest: 'uploads/' });
 
 // Налаштування Google API
-const credentials = require('./credentials.json');
+const credentials = require('../credentials.json');
 const spreadsheetId = '1Rdy0e3ZUbfz9Ufszfj6kCh9iwVtgF9Yi2bhustXI1x8'; // Замініть на ваш ID таблиці
 
 const auth = new google.auth.GoogleAuth({
